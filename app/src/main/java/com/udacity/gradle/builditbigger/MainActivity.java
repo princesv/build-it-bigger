@@ -70,7 +70,7 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, SimpleIdlingResources>,
 
     @Override
     protected void onPostExecute(String result) {
-       // Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+        // Toast.makeText(context, result, Toast.LENGTH_LONG).show();
         Intent intent = new Intent(context, JokerActivity.class);
         intent.putExtra(JokerActivity.TAG_JOKE, result);
         context.startActivity(intent);
