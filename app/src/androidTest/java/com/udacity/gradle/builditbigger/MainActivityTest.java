@@ -47,7 +47,7 @@ public class MainActivityTest {
 
        // onData(anything()).inAdapterView(withId(R.id.recipe_grid_recycler_view)).atPosition(1).perform(click());
         onView(withId(R.id.joke_button)).perform(click());
-        onView(withId(R.id.joke_view)).check(matches(isDisplayed()));
+        onView(withId(R.id.joke_view)).check(matches(withText("Why do scientists not trust atoms? Because they make up everything!")));
 
 
 
